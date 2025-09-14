@@ -1,0 +1,29 @@
+/* admin/assets/css/admin.css - colorful admin theme */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#ff6b6b;
+  --accent2:#6bffde;
+  --muted:#94a3b8;
+  --white:#ffffff;
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#081021);color:var(--white);min-height:100vh}
+.header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:linear-gradient(90deg,#07102155,#071021aa);border-bottom:1px solid rgba(255,255,255,0.04)}
+.brand{display:flex;gap:12px;align-items:center}
+.brand .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700}
+.container{display:flex;gap:20px;padding:20px}
+.sidebar{width:240px;background:var(--card);padding:16px;border-radius:12px;height:calc(100vh - 112px);overflow:auto}
+.menu a{display:block;padding:10px 12px;border-radius:8px;color:var(--muted);text-decoration:none;margin-bottom:6px}
+.menu a.active, .menu a:hover{background:linear-gradient(90deg, rgba(255,107,107,0.12), rgba(107,255,222,0.06));color:var(--white);box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+.content{flex:1;padding:10px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;margin-bottom:12px}
+.table{width:100%;border-collapse:collapse}
+.table th, .table td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+.form-row{display:flex;gap:10px;flex-wrap:wrap}
+.input, textarea, select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#041017}
+.btn-danger{background:#ff6b6b;color:#fff}
+.small{font-size:13px;color:var(--muted)}
+.footer{padding:12px;text-align:center;color:var(--muted)}
