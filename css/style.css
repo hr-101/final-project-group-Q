@@ -1,0 +1,335 @@
+
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.body {
+	background-image: url(images/bge.jpeg);
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #0a0909;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+ nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  /* keeps them vertically aligned */
+    padding: 10px 15px;
+    background: rgba(103, 147, 213, 0.1);
+    border: 1px solid rgba(41, 75, 249, 0.2); /* fixed opacity */
+    backdrop-filter: blur(15px);
+    line-height: 60px;
+}
+
+nav a {
+    display: inline-block; /* ensure no block behavior */
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+}
+
+
+
+
+
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+/* Categories Section */
+.categories {
+    padding: 4% 0;
+    position: relative;
+    text-align: center;
+    background-image:url(bge.jpg); /* make sure the image file name is correct */
+    background-size: cover;   /* makes the image cover the whole section */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat; /* avoids repeating the image */
+}
+
+
+.categories h2 {
+    font-size: 4rem;
+    display: block;        /* block so it takes full width */
+    margin-bottom: 30px;   /* space below heading */
+    animation: pop 1s ease-out, flash 2s infinite;
+    color: red;
+}
+
+@keyframes flash {
+    0%   { color: rgb(96, 121, 174); }
+    100% { color: black; }
+}
+
+/* Animation for h2 */
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Keep 3 boxes in one row */
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+
+/* CSS for Food Menu */
+.food-menu{
+    .hbg {
+    background-image: ul("bge.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    width: 100%;
+    
+}
+
+}
+.food-menu-box{
+    width: 40%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.social ul li img {
+    width: 35px;       /* adjust size */
+    height: 35px;      /* same as width for circle */
+    border-radius: 50%; /* makes them round */
+    object-fit: cover;  /* keeps image inside circle nicely */
+}
